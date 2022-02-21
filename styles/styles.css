@@ -17,7 +17,7 @@
 
     --br: .5rem;
     
-    --margin: 1rem;
+    --margin: 2rem;
 
 }
 
@@ -123,6 +123,8 @@ img {
 .ratings li:nth-child(2) {
     margin-top: 1rem;
     margin-bottom: 1rem;
+            padding-top: 1rem;
+        padding-bottom: 1rem;
 }
 
 .rating::before {
@@ -174,7 +176,7 @@ footer a {
     color: var(--clr-footer);
 }
 
-@media (min-width: 35em) {
+@media (min-width: 53em) {
     body{
         background: url(../images/bg-pattern-top-desktop.svg) left top no-repeat, url(../images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
     }
@@ -199,29 +201,41 @@ footer a {
         width: 40vw;
     }
     
+    .intro {
+        padding-bottom: 0;
+    }
 
     .ratings {
+        margin-top: 1rem;
         display: flex;
         flex-direction: column;
-        padding-top: 1em;
+        justify-content: center;
+        gap: 1.1rem;     
+    }
+    
+    .ratings li {
+                padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
     }
 
     .rating {
         width: 78%;
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
     }
     
     .rating::before {
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: 0;
-        margin-right: 0;
+        margin: auto;
     }
 
-    .rating:nth-child(2) {
+    .ratings li:nth-child(2) {
         align-self: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
     }
 
     .rating:nth-child(3) {
@@ -229,6 +243,9 @@ footer a {
     }
 
     h1 {
+        font-size: 3rem;
+        letter-spacing: -1.71px;
+        line-height: 3rem;
         padding-top: 0;
         margin-left: 0;
         margin-right: 0;
@@ -236,6 +253,7 @@ footer a {
 
     .testimony {
         flex-direction: row;
+        gap: 2em;
     }
 
     .testimony li:nth-child(1) {

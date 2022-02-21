@@ -4,6 +4,7 @@
     /* Typographie */
     --fs: 0.938rem;
     --fs-footer: 0.688rem;
+    --fs-main: 0.8125rem;
     --ff: 'Spartan', sans-serif;
 
     /* Colors */
@@ -86,6 +87,7 @@ h1 {
 
 .person {
     font-weight: 700;
+    margin-bottom: .5rem;
 }
 
 .buyer {
@@ -111,6 +113,7 @@ img {
 
 .rating {
     font-weight: 700;
+    font-size: var(--fs-main);
     color: var(--clr-primary-700);
     background-color: var(--clr-neutral-background);
     border-radius: var(--br);
@@ -147,7 +150,7 @@ img {
 }
 
 .testimony {
-    font-size: var(--fs-footer);
+    font-size: var(--fs-main);
     color: var(--clr-white);
     display: flex;
     flex-direction: column;
@@ -195,6 +198,7 @@ footer a {
     .headings > ul {
         width: 40vw;
     }
+    
 
     .ratings {
         display: flex;
@@ -204,6 +208,16 @@ footer a {
 
     .rating {
         width: 78%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+    
+    .rating::before {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .rating:nth-child(2) {

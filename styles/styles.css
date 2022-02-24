@@ -16,7 +16,7 @@
     --clr-white: hsl(0, 0%, 100%);
 
     --br: .5rem;
-    
+
     --margin: 2rem;
 
 }
@@ -54,7 +54,7 @@ body {
     font-family: var(--ff);
     font-size: var(--fs);
     font-weight: 500;
-     background: url(../images/bg-pattern-top-mobile.svg) left top no-repeat, url(../images/bg-pattern-bottom-mobile.svg) right bottom no-repeat;
+    background: url(../images/bg-pattern-top-mobile.svg) left top no-repeat, url(../images/bg-pattern-bottom-mobile.svg) right bottom no-repeat;
 }
 
 main {
@@ -123,8 +123,8 @@ img {
 .ratings li:nth-child(2) {
     margin-top: 1rem;
     margin-bottom: 1rem;
-            padding-top: 1rem;
-        padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .rating::before {
@@ -176,11 +176,11 @@ footer a {
     color: var(--clr-footer);
 }
 
-@media (min-width: 53em) {
-    body{
+@media (min-width: 55em) {
+    body {
         background: url(../images/bg-pattern-top-desktop.svg) left top no-repeat, url(../images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
     }
-    
+
     main {
         padding-top: calc(4rem + 5vw);
         padding-bottom: calc(2.25rem + 5vw);
@@ -200,46 +200,58 @@ footer a {
     .headings > ul {
         width: 40vw;
     }
-    
+
     .intro {
         padding-bottom: 0;
     }
 
     .ratings {
-        margin-top: 1rem;
+        margin-top: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 1.1rem;     
+        gap: 1.1rem;
     }
-    
+
     .ratings li {
-                padding-top: 1.25rem;
+        padding-top: 1.25rem;
         padding-bottom: 1.25rem;
     }
 
+
     .rating {
         width: 78%;
-        display: flex; 
+        display: flex;
         align-items: center;
-        justify-content: center;
+        align-content: center;
+        justify-content: flex-start;
+        min-width: 360px;
     }
-    
+
     .rating::before {
-        margin: auto;
+        margin: auto 0 auto 1rem;
+        width: min(50%, 100px);
     }
 
     .ratings li:nth-child(2) {
         align-self: center;
         margin-top: 0;
         margin-bottom: 0;
-        
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
     }
 
+    span {
+        min-width: 20ch;
+        padding-top: .2rem;
+    }
+
     .rating:nth-child(3) {
         align-self: flex-end;
+    }
+
+    .rating span {
+        margin-left: 1rem;
     }
 
     h1 {
@@ -257,7 +269,6 @@ footer a {
     }
 
     .testimony li:nth-child(1) {
-
         margin-bottom: var(--margin);
     }
 
@@ -267,7 +278,6 @@ footer a {
     }
 
     .testimony li:nth-child(3) {
-
         margin-top: var(--margin);
     }
 }

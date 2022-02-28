@@ -176,7 +176,7 @@ footer a {
     color: var(--clr-footer);
 }
 
-@media (min-width: 55em) {
+@media (min-width: 50em) {
     body {
         background: url(../images/bg-pattern-top-desktop.svg) left top no-repeat, url(../images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
     }
@@ -226,6 +226,7 @@ footer a {
         align-content: center;
         justify-content: flex-start;
         min-width: 360px;
+        padding-right: 0;
     }
 
     .rating::before {
